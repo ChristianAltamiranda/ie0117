@@ -1,0 +1,12 @@
+#Christian Altamiranda Solano
+
+
+#esto se tiene que dividir entre 86400 luego para convertirlo en dias
+actual=$(date '+%s')
+may=$(date -d "2024-05-01" '+%s')
+
+
+#La varible ambiente establecida fue MES=mayo
+variable="$MES"
+
+echo "Hoy es $(date +%A) $(date +%d) de $(date +%B), del año $(date +%Y).Faltan $(((may-actual)/(86400))) días para $variable"
