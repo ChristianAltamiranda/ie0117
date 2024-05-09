@@ -5,30 +5,24 @@
 
 int a=6;
 int b=1;
-int decimal=5;
 
 int main(){
+	
 	int resultado;
 
-	resultado = bitwise_and(a,b);
-	printf("El resultado del operador & es %d\n", resultado);
+	printf("El resultado en binario de la funcion bitwise_and es ");
+	print_binary(bitwise_and(a,b));
 
-        resultado = bitwise_or(a,b);
-        printf("El resultado del operador | es %d\n", resultado);
+	printf("El resultado en binario de la funcion birwise_or es ");
+        print_binary(bitwise_or(a,b));
 
-	resultado = bitwise_xor(a,b);
-        printf("El resultado del operador ^ es %d\n", resultado);
+	printf("El resultado en binario de la funcion birwise_xor es ");
+	print_binary(bitwise_xor(a,b));
 
-	resultado = bitwise_not(a);
-        printf("El resultado del operador ~ es %d\n", resultado);
+	printf("El resultado en binario de la funcion birwise_not es ");
+	print_binary(bitwise_not(a));
 
-	resultado = bitwise_not(b);
-        printf("El resultado del operador ~ es %d\n", resultado);
+        printf("El resultado en binario de la funcion birwise_not es ");
+	print_binary(bitwise_not(b));
 
-
-	print_binary(decimal);
-        printf("\n");
-	
-	
-	return 0;
 }
