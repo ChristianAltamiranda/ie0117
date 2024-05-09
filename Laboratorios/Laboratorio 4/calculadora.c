@@ -24,19 +24,12 @@ int bitwise_not(int a){
 
 
 void print_binary(int decimal) {
-   printf("El numero en binario es ");    
-    
-
-    int bits = sizeof(decimal) ;
-    
-   
-    for(int i = bits - 1; i >= 0; i--) {
-      
-        int bit = (decimal >> i) & 1;
        
-        printf("%d", bit);
-    }
-    
+	for(int i =31; i >= 0; i--) { 
+        	int bit = (decimal >> i) & 1;
+       		 printf("%d", bit);
+	  }
+
     printf("\n");
 }
 
